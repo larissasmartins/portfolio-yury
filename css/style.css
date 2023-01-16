@@ -707,25 +707,25 @@ footer .container .footer-widget .pull-right .social {
 }
 
 .project {
-  width: 400px;
-  max-height: 450px;
+  width: 420px;
 }
 
 /* Work page ---------------------*/
 #website-main figure {
   padding-top: unset;
 }
-#website-main figure .image-project {
+#website-main .image-project {
   max-width: 70%;
+}
+#website-main .page-three .image-project {
+  max-width: 100%;
+  margin-top: 50px;
 }
 #website-main .image-container .image-projects::before {
   content: url("/images/topbar-image.png");
 }
 #website-main .image-projects {
   margin-top: 50px;
-}
-#website-main .video-container {
-  background-color: #FFCD52;
 }
 #website-main h1 {
   font-size: 55px;
@@ -736,18 +736,19 @@ footer .container .footer-widget .pull-right .social {
   letter-spacing: 1px;
 }
 #website-main p {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 #website-main .work-pagination {
   margin-top: 100px;
+  pointer-events: all !important;
 }
 #website-main .work-pagination a:hover {
   text-decoration: unset !important;
   color: #ED1456 !important;
+  cursor: pointer;
 }
 
 .cursor-star:hover {
   cursor: url("../images/cursor-star.png"), auto;
 }
 
-/*# sourceMappingURL=style.css.map */
