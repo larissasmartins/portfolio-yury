@@ -1,13 +1,13 @@
 @font-face {
-	font-family: 'Honnie';
-	src: url('../fonts/honnie/Honnie.otf') format('opentype'),
-		url('../fonts/honnie/Honnie.ttf') format('truetype');
+	font-family: 'Freigeist';
+	src: url('../fonts/freigeist/freigeist-xwide-regular.eot') format('opentype'),
+		url('../fonts/freigeist/freigeist-xwide-regular.ttf') format('truetype');
 	font-display: block;
 	font-weight: normal;
 	font-style: normal;
 }
 
-$font-primary: 'Honnie', sans-serif;
+$font-primary: 'Freigeist', sans-serif;
 $font-secondary: 'Montserrat', sans-serif;
 
 // Overrides
@@ -309,29 +309,19 @@ h1, h2, h3, h4, h5, h6 {
 			box-shadow: rgb(0 0 0 / 20%) 0px 60px 40px -7px;
 			border-radius: 20px;
 		}
-		/*@media screen and (max-width: $screen-xs) {
-			padding: 0 0em;
-		}*/
 		h3 {
 			margin-bottom: 10px;
-			color: $brand-white;
+			color: $brand-black;
     		letter-spacing: 1.5px;
+			font-size: 30px;
 			@media (max-width: 425px) {
 				font-size: 30px;
 			}
 		}
 
 		p {
-			color: $brand-white;
+			color: $brand-black;
 		}
-		/*
-		.service-icon {
-			margin-bottom: 30px;
-			i {
-				font-size: 40px;
-				color: $brand-primary;
-			}
-		}*/
 		p {
 			font-size: 18px;
 			@media (max-width: 425px) {
@@ -353,7 +343,6 @@ h1, h2, h3, h4, h5, h6 {
 
 	.container::before {
 		content: "";
-		background-color: $brand-primary;
 		width: 98%;
 		z-index: 0;
 		position: absolute;
@@ -707,9 +696,8 @@ form {
 		margin: 0 auto;
 	}
 	.clients-title h3 {
-		font-size: 3em;
+		font-size: 2em;
 		letter-spacing: 1px;
-		text-transform: uppercase;
 	}
 
 	.clients {
@@ -720,19 +708,27 @@ form {
 		display: flex;
 		justify-content: space-around;
 		padding: unset;
+
+		img {
+			max-width: 150px;
+		}
+
 		@media(max-width: 1200px) {
 			img {
-				width: 150px;
+				max-width: 120px;
 			}
 		}
+
+		@media(max-width: 995px){
+			img {
+				max-width: 100px;
+			}
+		}
+
 		@media (max-width: 767px) {
 			display: grid;
 			grid-template-columns: auto auto;
 			grid-gap: 25px 0px;
-				
-			img {
-				width: 115px;
-			}
 		}
 
 		li {
@@ -832,7 +828,7 @@ footer{
 }
 
 .project {
-	width: 400px;
+	width: 250px;
 	max-height: 450px;
 }
 
@@ -856,12 +852,8 @@ footer{
 		margin-top: 50px;
 	}
 
-	.video-container {
-		background-color: $brand-yellow;
-	}
-
 	h1 {
-		font-size: 55px;
+		font-size: 40px;
 		margin: 70px 0;
 		background-color: $brand-primary;
 		padding: 20px;
@@ -875,6 +867,7 @@ footer{
 
 	.work-pagination {
 		margin-top: 100px;
+		pointer-events: all;
 	}
 
 	.work-pagination a:hover {
