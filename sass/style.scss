@@ -15,15 +15,14 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #11B6EF !default; // já apliquei a cor atual
-$brand-secondary: #1fb5f6 !default; 
+$brand-primary: #11B6EF !default;
 
 $brand-white: #fff;
 $brand-black: #000;
 $brand-yellow: #FFCD52;
 $brand-red: #ED1456;
 $brand-lighter: #848484;
-$brand-selection-color: #1fb5f6;
+$brand-selection-color: #11B6EF;
 $brand-body-color: #fcfcfc;
 
 
@@ -154,6 +153,10 @@ h1, h2, h3, h4, h5, h6 {
 	background: $brand-white;
 	max-width: 1300px;
 	margin: 0 auto;
+	
+	@media(max-width: 767px){
+		margin: 0 5px;
+	}
 }
 
 #website-header {
@@ -164,6 +167,8 @@ h1, h2, h3, h4, h5, h6 {
 	@media screen and (max-width: $screen-md) {
 		border-bottom: 1px solid rgba(0,0,0,.1);
 		padding-bottom: unset;
+		padding-top: 30px;
+		margin-bottom: 30px;
 	}
 
 	.navbar-default {
@@ -236,12 +241,6 @@ h1, h2, h3, h4, h5, h6 {
 			&:first-child {
 				margin-left: 0;	
 			}
-/*
-			&:last-child {
-				a {
-					border-bottom: 1px solid #9797a554; 
-			    }
-			}*/
 
 			a {
 				font-family: $font-secondary;
@@ -261,7 +260,7 @@ h1, h2, h3, h4, h5, h6 {
 				}
 
 				@media screen and (max-width: $screen-xs) {
-					font-size: 18px;
+					font-size: 16px;
 				}
 
 			}
@@ -286,10 +285,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #work, #about, #contact {
-	padding-bottom: 5em;
-	margin: 100px auto;
+	margin: 50px auto;
 	@media screen and (max-width: $screen-sm) {
-		padding-bottom: 3em;
 		padding-top: 10px;
 	}
 }
@@ -315,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
     		letter-spacing: 1.5px;
 			font-size: 30px;
 			@media (max-width: 425px) {
-				font-size: 30px;
+				font-size: 25px;
 			}
 		}
 
@@ -362,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
 			position: relative;
 
 			@media screen and (max-width: $screen-xs) {
-				height: unset;
+				height: auto;
 			}
 
 				.work-title{
@@ -400,7 +397,8 @@ h1, h2, h3, h4, h5, h6 {
 #website-author {
 	.container h2 {
 		@media (max-width: 425px) {
-			font-size: 45px;
+			font-size: 40px;
+			margin: 0 0 40px;
 		}
 	}
 
@@ -430,6 +428,12 @@ h1, h2, h3, h4, h5, h6 {
 		z-index: 1;
 		right: 0;
 		top: -120px;
+
+		@media(max-width: 990px){
+			width: 40%;
+			top: -50px;
+			padding-top: 10px;
+		}
 	}
 
 	.author-image figure {
@@ -471,7 +475,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: unset;
 	.container .intro h2 {
 		@media (max-width: 425px) {
-			font-size: 45px;
+			font-size: 40px;
 		}
 	}
 	.container .contact-group {
@@ -683,7 +687,7 @@ form {
 		transition: all 0.5s ease-in-out; 
 		padding: 10px 15px;
 		color: white;
-		font-family: 'Montserrat';
+		font-family: $font-primary;
 		text-transform: uppercase;
 		font-size: 21px;
 		letter-spacing: .7px;
@@ -698,6 +702,11 @@ form {
 	.clients-title h3 {
 		font-size: 2em;
 		letter-spacing: 1px;
+
+		@media(max-width: 425px){
+			font-size: 40px;
+			margin: 0 0 30px 0;
+		}
 	}
 
 	.clients {
@@ -827,10 +836,16 @@ footer{
     margin-bottom: 10%;
 }
 
-.project {
-	width: 250px;
-	max-height: 450px;
+.gif-sj {
+	width: 400px;
+	height: auto;
+
+	@media(max-width: 767px) {
+		width: 250px;
+	}
 }
+
+
 
 /* Work page ---------------------*/
 #website-main {
