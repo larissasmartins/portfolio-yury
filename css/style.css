@@ -50,23 +50,28 @@ h1, h2, h3, h4, h5, h6 {
 
 ::-webkit-selection {
   color: #fcfcfc;
-  background: #1fb5f6;
+  background: #11B6EF;
 }
 
 ::-moz-selection {
   color: #fcfcfc;
-  background: #1fb5f6;
+  background: #11B6EF;
 }
 
 ::selection {
   color: #fcfcfc;
-  background: #1fb5f6;
+  background: #11B6EF;
 }
 
 .box-wrap {
   background: #fff;
   max-width: 1300px;
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .box-wrap {
+    margin: 0 5px;
+  }
 }
 
 #website-header {
@@ -78,6 +83,8 @@ h1, h2, h3, h4, h5, h6 {
   #website-header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: unset;
+    padding-top: 30px;
+    margin-bottom: 30px;
   }
 }
 #website-header .navbar-default {
@@ -137,12 +144,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   display: inline-block;
   margin-left: 50px;
-  /*
-  			&:last-child {
-  				a {
-  					border-bottom: 1px solid #9797a554; 
-  			    }
-  			}*/
 }
 @media screen and (max-width: 480px) {
   #website-header .nav li {
@@ -172,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 480px) {
   #website-header .nav li a {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 #website-header .nav li.active a {
@@ -194,12 +195,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #work, #about, #contact {
-  padding-bottom: 5em;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 @media screen and (max-width: 768px) {
   #work, #about, #contact {
-    padding-bottom: 3em;
     padding-top: 10px;
   }
 }
@@ -228,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 425px) {
   #services .service h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 #services .service p {
@@ -273,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 480px) {
   #work .website-grid {
-    height: unset;
+    height: auto;
   }
 }
 #work .website-grid .work-title {
@@ -307,7 +306,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 425px) {
   #website-author .container h2 {
-    font-size: 45px;
+    font-size: 40px;
+    margin: 0 0 40px;
   }
 }
 @media (max-width: 425px) {
@@ -330,6 +330,13 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
   right: 0;
   top: -120px;
+}
+@media (max-width: 990px) {
+  #website-author .animation-circle {
+    width: 40%;
+    top: -50px;
+    padding-top: 10px;
+  }
 }
 #website-author .author-image figure {
   padding: unset;
@@ -367,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 425px) {
   #contact .container .intro h2 {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 #contact .container .contact-group {
@@ -584,6 +591,12 @@ form .btn.btn-default:hover, form .btn.btn-default:focus, form .btn.btn-default:
   font-size: 2em;
   letter-spacing: 1px;
 }
+@media (max-width: 425px) {
+  #brand .clients-title h3 {
+    font-size: 40px;
+    margin: 0 0 30px 0;
+  }
+}
 #brand .clients {
   padding: unset;
   align-items: center;
@@ -696,9 +709,15 @@ footer .container .footer-widget .pull-right .social {
   margin-bottom: 10%;
 }
 
-.project {
-  width: 250px;
-  max-height: 450px;
+.gif-sj {
+  width: 400px;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .gif-sj {
+    width: 250px;
+    margin-bottom: 15px;
+  }
 }
 
 /* Work page ---------------------*/
@@ -707,6 +726,11 @@ footer .container .footer-widget .pull-right .social {
 }
 #website-main figure .image-project {
   max-width: 70%;
+}
+@media (max-width: 425px) {
+  #website-main figure .image-project {
+    max-width: 95%;
+  }
 }
 #website-main .image-container .image-projects::before {
   content: url("/images/topbar-image.png");
@@ -722,11 +746,23 @@ footer .container .footer-widget .pull-right .social {
   color: #fff;
   letter-spacing: 1px;
 }
+@media (max-width: 425px) {
+  #website-main h1 {
+    font-size: 22px;
+    margin: 25px 0;
+  }
+}
 #website-main p {
   margin-bottom: 50px;
 }
+@media (max-width: 425px) {
+  #website-main p {
+    font-size: 16px;
+  }
+}
 #website-main .work-pagination {
-  margin-top: 100px;
+  margin-top: 50px;
+  padding-bottom: 50px;
   pointer-events: all;
 }
 #website-main .work-pagination a:hover {
