@@ -854,6 +854,10 @@ footer{
 
 		.image-project {
 			max-width: 70%;
+
+			@media(max-width: 425px){
+				max-width: 95%;
+			}
 		}
 	}
 
@@ -874,6 +878,11 @@ footer{
 		padding: 20px;
 		color: $brand-white;
 		letter-spacing: 1px;
+
+		@media(max-width: 425px) {
+			font-size: 26px;
+			margin: 25px 0;
+		}
 	}
 	
 	p {
@@ -881,7 +890,8 @@ footer{
 	}
 
 	.work-pagination {
-		margin-top: 100px;
+		margin-top: 50px;
+		padding-bottom: 50px;
 		pointer-events: all;
 	}
 
