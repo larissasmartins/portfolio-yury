@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 480px) {
   #website-header .nav li a {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 #website-header .nav li.active a {
@@ -305,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   #projetos .website-grid .work-title h3 {
     padding: 10px;
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -321,7 +321,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 425px) {
   #sobre p {
     font-size: 18px;
-    line-height: 40px;
+    line-height: 35px;
   }
 }
 #sobre .author .website-social-icons {
@@ -732,6 +732,11 @@ footer .container .footer-widget .pull-right .social {
   max-height: 470px;
   margin: 25px auto;
 }
+@media (max-width: 767px) {
+  .page-two .project {
+    max-height: 280px;
+  }
+}
 
 .page-three .project, .page-four .project {
   width: 33%;
@@ -807,14 +812,17 @@ footer .container .footer-widget .pull-right .social {
 @media (max-width: 425px) {
   #website-main p {
     font-size: 16px;
+    margin-bottom: 30px;
   }
 }
 #website-main .work-pagination {
-  margin-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   pointer-events: all;
 }
 @media (max-width: 425px) {
+  #website-main .work-pagination {
+    padding: 70px 0;
+  }
   #website-main .work-pagination .col-xs-4 {
     width: unset;
   }
