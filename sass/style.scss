@@ -925,7 +925,7 @@ footer{
 
 	h1 {
 		font-size: 35px;
-		margin: 70px 0;
+		margin: 70px 0 30px;
 		background-color: $brand-primary;
 		padding: 20px;
 		color: $brand-white;
@@ -938,7 +938,7 @@ footer{
 	}
 	
 	p {
-		margin-bottom: 50px;
+		margin-bottom: 100px;
 
 		@media(max-width: 425px){
 			font-size: 16px;
