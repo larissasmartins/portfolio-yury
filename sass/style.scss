@@ -951,11 +951,12 @@ footer{
 	}
 
 	.work-pagination {
-		margin-top: 50px;
-		padding-bottom: 20px;
+		padding-bottom: 25px;
 		pointer-events: all;
 
 		@media(max-width: 425px){
+			padding: 70px 0;
+
 			.col-xs-4 {
 				width: unset;
 			}
