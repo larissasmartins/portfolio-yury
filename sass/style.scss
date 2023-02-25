@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-#work, #about, #contact {
+#projetos, #sobre, #contato {
 	margin: 50px auto;
 	@media screen and (max-width: $screen-sm) {
 		padding-top: 10px;
@@ -350,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-#work {
+#projetos {
 	padding-top: unset;
 
 		.website-grid{
@@ -398,7 +398,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-#website-author {
+#sobre {
 	.container h2 {
 		font-size: 40px;
 
@@ -477,7 +477,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-#contact {
+#contato {
 	padding-bottom: unset;
 	.container .intro h2 {
 		font-size: 38px;
