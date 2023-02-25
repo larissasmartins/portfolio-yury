@@ -232,6 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 			font-size: 20px;
 			display: inline-block;
 			margin-left: 50px;
+			margin-bottom: 12px;
 
 			@media screen and (max-width: $screen-xs) {
 				width: 100%;
@@ -243,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 			}
 
 			a {
-				font-family: $font-secondary;
+				font-family: $font-primary;
 				font-size: 20px;
 				text-transform: uppercase;
 				color: rgba(0,0,0,1);
@@ -260,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
 				}
 
 				@media screen and (max-width: $screen-xs) {
-					font-size: 16px;
+					font-size: 13px;
 				}
 
 			}
@@ -296,7 +297,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	.service {
 		text-align: left;
-		padding: 2.5em 1.6em 0;
+		padding: 1.5em .5em 0;
 		margin: 20px 0;
 		float: left;
 		width: 100%;
@@ -310,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 			margin-bottom: 10px;
 			color: $brand-black;
     		letter-spacing: 1.5px;
-			font-size: 30px;
+			font-size: 26px;
 			@media (max-width: 425px) {
 				font-size: 25px;
 			}
@@ -354,9 +355,12 @@ h1, h2, h3, h4, h5, h6 {
 
 		.website-grid{
 			height: 320px;
-			background-size: cover;
 			margin-bottom: 30px;
 			position: relative;
+
+			@media(max-width: 990px){
+				height: unset;
+			}
 
 			@media screen and (max-width: $screen-xs) {
 				height: auto;
@@ -396,6 +400,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #website-author {
 	.container h2 {
+		font-size: 40px;
+
 		@media (max-width: 425px) {
 			font-size: 40px;
 			margin: 0 0 40px;
@@ -474,6 +480,8 @@ h1, h2, h3, h4, h5, h6 {
 #contact {
 	padding-bottom: unset;
 	.container .intro h2 {
+		font-size: 38px;
+
 		@media (max-width: 425px) {
 			font-size: 40px;
 		}
@@ -499,6 +507,7 @@ h1, h2, h3, h4, h5, h6 {
 
 		@media (max-width: 425px) {
 			font-size: 17px;
+			padding: unset;
 		}
 	}
 }
@@ -660,9 +669,14 @@ form {
 	overflow : hidden;
 	cursor : pointer;
 	
-
 	img {
 		transition: all .7s ease-in-out;
+		background-size: cover;
+		max-height: 310px;
+
+		@media(max-width: 990px){
+			max-height: unset;
+		}
 	}
 	
 	&:hover img {
@@ -836,16 +850,49 @@ footer{
     margin-bottom: 10%;
 }
 
-.gif-sj {
-	width: 400px;
-	height: auto;
-
-	@media(max-width: 767px) {
-		width: 250px;
-		margin-bottom: 15px;
+.page-two {
+	.project {
+		max-height: 470px;
+		margin: 25px auto;
 	}
 }
 
+.page-three, .page-four {
+	.project {
+		width: 33%;
+		margin-bottom: 30px;
+
+		@media(max-width: 768px) {
+			width: 90%;
+		}
+	}
+}
+
+.page-five {
+	.project {
+		width: 90%;
+		margin-bottom: 25px;
+	}
+}
+
+.page-five .video-container {
+	.project {
+		width: 33%;
+		margin-bottom: 30px;
+
+		@media(max-width: 767px) {
+			width: 90%;
+			display: flex;
+			flex-direction: column;
+			margin: 0 auto 25px;
+		}
+	}
+}
+
+.video-container {
+	width: 90%;
+	margin: 0 auto;
+}
 
 
 /* Work page ---------------------*/
@@ -856,7 +903,11 @@ footer{
 		.image-project {
 			max-width: 70%;
 
-			@media(max-width: 425px){
+			&:first-child {
+				margin-top: 40px;
+			}
+
+			@media(max-width: 768px){
 				max-width: 95%;
 			}
 		}
@@ -873,7 +924,7 @@ footer{
 	}
 
 	h1 {
-		font-size: 40px;
+		font-size: 35px;
 		margin: 70px 0;
 		background-color: $brand-primary;
 		padding: 20px;
@@ -896,8 +947,14 @@ footer{
 
 	.work-pagination {
 		margin-top: 50px;
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 		pointer-events: all;
+
+		@media(max-width: 425px){
+			.col-xs-4 {
+				width: unset;
+			}
+		}
 	}
 
 	.work-pagination a:hover {
