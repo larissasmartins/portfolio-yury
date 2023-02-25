@@ -789,7 +789,7 @@ footer .container .footer-widget .pull-right .social {
 }
 #website-main h1 {
   font-size: 35px;
-  margin: 70px 0;
+  margin: 70px 0 30px;
   background-color: #11B6EF;
   padding: 20px;
   color: #fff;
@@ -802,7 +802,7 @@ footer .container .footer-widget .pull-right .social {
   }
 }
 #website-main p {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 @media (max-width: 425px) {
   #website-main p {
