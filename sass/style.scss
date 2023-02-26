@@ -896,6 +896,11 @@ footer{
 .video-container {
 	width: 90%;
 	margin: 0 auto;
+
+	& iframe {
+		aspect-ratio: 16 / 9;
+		width: 100%;
+	}
 }
 
 
@@ -951,7 +956,7 @@ footer{
 	}
 
 	.work-pagination {
-		padding-bottom: 25px;
+		padding: 25px 0;
 		pointer-events: all;
 
 		@media(max-width: 425px){
