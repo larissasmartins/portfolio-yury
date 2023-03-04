@@ -6,7 +6,7 @@ The goal is to create a responsive website to present designer's projects with a
 </h3>
 
 <h4 align="center">Technologies that were used on the project:</h4 align="center">
-<p align="center">HTML5, SASS and Javascript</p align="center">
+<p align="center">HTML5, SCSS and Javascript</p align="center">
 
 ## Intro
 
