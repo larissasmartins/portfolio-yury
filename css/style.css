@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #services .service {
   text-align: left;
-  padding: 1.5em 0.5em 0;
+  padding: 1.5em 0.6em 0;
   margin: 20px 0;
   float: left;
   width: 100%;
@@ -740,7 +740,7 @@ footer .container .footer-widget .pull-right .social {
 
 .page-three .project, .page-four .project {
   width: 33%;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 @media (max-width: 768px) {
   .page-three .project, .page-four .project {
@@ -767,7 +767,6 @@ footer .container .footer-widget .pull-right .social {
 }
 
 .video-container {
-  width: 90%;
   margin: 0 auto;
 }
 .video-container iframe {
