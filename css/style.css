@@ -640,9 +640,9 @@ form .btn.btn-default:hover, form .btn.btn-default:focus, form .btn.btn-default:
 }
 @media (max-width: 767px) {
   #brand .clients {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 25px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 10px;
   }
 }
 #brand .clients li {
@@ -728,22 +728,22 @@ footer .container .footer-widget .pull-right .social {
   margin-bottom: 10%;
 }
 
-.page-two .project {
+.page-two .project-image {
   max-height: 470px;
   margin: 25px auto;
 }
 @media (max-width: 767px) {
-  .page-two .project {
+  .page-two .project-image {
     max-height: 280px;
   }
 }
 
-.page-three .project, .page-four .project {
+.page-two .project, .page-three .project, .page-four .project {
   width: 33%;
   margin-bottom: 5px;
 }
 @media (max-width: 768px) {
-  .page-three .project, .page-four .project {
+  .page-two .project, .page-three .project, .page-four .project {
     width: 90%;
   }
 }
