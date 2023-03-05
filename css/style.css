@@ -640,9 +640,9 @@ form .btn.btn-default:hover, form .btn.btn-default:focus, form .btn.btn-default:
 }
 @media (max-width: 767px) {
   #brand .clients {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 25px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 10px;
   }
 }
 #brand .clients li {
